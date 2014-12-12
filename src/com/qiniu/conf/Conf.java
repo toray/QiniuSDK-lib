@@ -27,8 +27,7 @@ public class Conf {
      */
 	public static int SO_TIMEOUT = 30 * 1000;
 	
-//	public static final int BLOCK_SIZE = 1024 * 1024 * 4;
-	public static final int BLOCK_SIZE = 1024 * 200;
+	public static final int BLOCK_SIZE = 1024 * 1024 * 4;
 	public static int CHUNK_SIZE = 1024 * 256;
     public static int FIRST_CHUNK = 1024 * 256;
     public static int ONCE_WRITE_SIZE = 1024 * 32;
