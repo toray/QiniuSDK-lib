@@ -27,7 +27,6 @@ public final class AsyncHttpClientMod extends AsyncHttpClient {
     }
 
     //在父类构造函数中调用
-    @Override
     protected ClientConnectionManager createConnectionManager(SchemeRegistry schemeRegistry, BasicHttpParams httpParams) {
         DnsManager d = dns == null ? local.get() : dns;
         return new ThreadSafeClientConnManager(httpParams, schemeRegistry, d);
